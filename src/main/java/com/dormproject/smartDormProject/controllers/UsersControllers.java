@@ -1,4 +1,4 @@
-package com.dormproject.smartDormProject;
+package com.dormproject.smartDormProject.controllers;
 
 import java.util.List;
 
@@ -19,8 +19,6 @@ public class UsersControllers {
     private UsersDAO userDAO;
  
    
-
-
     @GetMapping
     public List<Users> getAll(){
         return userDAO.getAll();
