@@ -1,10 +1,8 @@
 package com.dormproject.smartDormProject;
 import java.util.List;
 
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 import com.dormproject.smartDormProject.entity.Roles;
 import com.dormproject.smartDormProject.entity.Users;
@@ -18,12 +16,12 @@ public class SmartDormProjectApplication {
         SpringApplication.run(SmartDormProjectApplication.class, args);
     }
 
-    @Bean
-    CommandLineRunner commandLineRunner(UsersDAO dao, RoleDAO roleDAO) {
-        return args -> {
-         insertData(dao,roleDAO);
-        };
-    }
+    // @Bean
+    // CommandLineRunner commandLineRunner(UsersDAO dao, RoleDAO roleDAO) {
+    //     return args -> {
+    //     //  insertData(dao,roleDAO);
+    //     };
+    // }
 
     public void insertData(UsersDAO dao, RoleDAO roleDAO){
         Roles role = roleDAO.get(1);

@@ -52,6 +52,22 @@ public class UsersRepository implements UsersDAO {
         entityManager.merge(users);
     }
 
+    @Override
+    public Users findUsername(String name) {
+        String jpql = "FROM Users WHERE name = :name";
+
+        List<Users> users = entityManager.createQuery(jpql, Users.class)
+                            .setParameter("name", name)
+                            .getResultList();
+
+        if(users.isEmpty()){
+            return null;
+        }
+        return users.get(0);
+    }
+
+        
+
    
 
    

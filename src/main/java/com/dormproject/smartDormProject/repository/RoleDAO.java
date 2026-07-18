@@ -11,4 +11,5 @@ public interface RoleDAO {
     Roles get(Integer id);
     List<Roles> getAll();
     void update(Roles role);
+    
 }

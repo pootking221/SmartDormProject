@@ -9,4 +9,5 @@ public interface UsersDAO {
     Users get(Integer userid);
     List<Users> getAll();
     void update(Users users);
+    Users findUsername(String users);
 }
