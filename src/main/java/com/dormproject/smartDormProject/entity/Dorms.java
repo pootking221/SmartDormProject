@@ -74,10 +74,10 @@ public class Dorms {
     public void setLatitude(float latitude) {
         this.latitude = latitude;
     }
-    public float getlongitude() {
-        return longitude;
+    public float getLongitude() {
+    return longitude;
     }
-    public void setlongitude(float longitude) {
+    public void setLongitude(float longitude) {
         this.longitude = longitude;
     }
     public Integer getDeposit() {

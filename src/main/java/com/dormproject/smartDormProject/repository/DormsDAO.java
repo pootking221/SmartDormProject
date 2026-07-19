@@ -7,8 +7,8 @@ import com.dormproject.smartDormProject.entity.ResponseBox;
 
 public interface DormsDAO {
     ResponseBox insert(Dorms dorms);
-    void delete(Integer id);
+    ResponseBox delete(Integer id);
     Dorms getDorms(Integer id);
     List<Dorms> getAll();
-    void update (Dorms dorms);
+    ResponseBox update (Dorms dorms);
 }
