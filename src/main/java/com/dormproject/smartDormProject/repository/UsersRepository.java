@@ -33,6 +33,7 @@ public class UsersRepository implements UsersDAO {
     public void delete(Integer userid){
         Users users = entityManager.find(Users.class, userid);
         entityManager.remove(users);
+        
     }
 
     @Override
