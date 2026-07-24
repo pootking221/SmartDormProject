@@ -1,4 +1,4 @@
-package com.dormproject.smartDormProject;
+package com.dormproject.smartDormProject.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
