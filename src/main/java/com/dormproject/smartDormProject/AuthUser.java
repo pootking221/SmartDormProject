@@ -4,12 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.dormproject.smartDormProject.entity.LoginRequest;
+import com.dormproject.smartDormProject.repository.fileDTO.LoginRequest;
 import com.dormproject.smartDormProject.entity.LoginResponse;
 import com.dormproject.smartDormProject.entity.Roles;
 import com.dormproject.smartDormProject.entity.Users;
-import com.dormproject.smartDormProject.repository.RoleDAO;
-import com.dormproject.smartDormProject.repository.UsersDAO;
+import com.dormproject.smartDormProject.repository.fileDAO.RoleDAO;
+import com.dormproject.smartDormProject.repository.fileDAO.UsersDAO;
 
 @Service
 public class AuthUser {

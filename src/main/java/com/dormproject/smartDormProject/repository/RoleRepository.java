@@ -1,6 +1,7 @@
 package com.dormproject.smartDormProject.repository;
 import java.util.List;
 
+import com.dormproject.smartDormProject.repository.fileDAO.RoleDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -11,7 +12,7 @@ import jakarta.persistence.TypedQuery;
 import jakarta.transaction.Transactional;
 
 @Repository
-public class RoleRepository implements RoleDAO{
+public class RoleRepository implements RoleDAO {
 
     private final EntityManager entityManager;
 

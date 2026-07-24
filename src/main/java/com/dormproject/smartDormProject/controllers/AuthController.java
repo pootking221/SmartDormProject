@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.dormproject.smartDormProject.AuthUser;
-import com.dormproject.smartDormProject.entity.LoginRequest;
+import com.dormproject.smartDormProject.repository.fileDTO.LoginRequest;
 import com.dormproject.smartDormProject.entity.LoginResponse;
 import com.dormproject.smartDormProject.entity.Users;
 

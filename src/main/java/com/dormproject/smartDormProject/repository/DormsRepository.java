@@ -2,6 +2,7 @@ package com.dormproject.smartDormProject.repository;
 
 import java.util.List;
 
+import com.dormproject.smartDormProject.repository.fileDAO.DormsDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -14,7 +15,7 @@ import jakarta.transaction.Transactional;
 
 
 @Repository
-public class DormsRepository implements DormsDAO{
+public class DormsRepository implements DormsDAO {
 
     private final EntityManager entityManager;
     private final ResponseBox responseBox = new ResponseBox();
@@ -74,13 +75,7 @@ public class DormsRepository implements DormsDAO{
     @Override
     public Dorms getDorms(Integer id) {
         Dorms dorm = new Dorms();
-         
-        try {
-             dorm = entityManager.find(Dorms.class, id);  
-        } catch (Exception e) {
-            responseBox.setMessage(e.getMessage());
-            responseBox.setStatusCode(500);
-        }
+        dorm = entityManager.find(Dorms.class, id);
 
         return  dorm;
         
