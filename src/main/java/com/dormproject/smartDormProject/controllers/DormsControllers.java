@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.dormproject.smartDormProject.entity.Dorms;
 import com.dormproject.smartDormProject.entity.ResponseBox;
-import com.dormproject.smartDormProject.repository.DormsDAO;
+import com.dormproject.smartDormProject.repository.fileDAO.DormsDAO;
 
 @RestController
 @RequestMapping("/api/dorms")

@@ -1,4 +1,4 @@
-package com.dormproject.smartDormProject.repository;
+package com.dormproject.smartDormProject.repository.fileDAO;
 import java.util.List;
 
 import com.dormproject.smartDormProject.entity.Users;

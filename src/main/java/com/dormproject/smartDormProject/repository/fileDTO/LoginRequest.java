@@ -1,4 +1,4 @@
-package com.dormproject.smartDormProject.entity;
+package com.dormproject.smartDormProject.repository.fileDTO;
 
 public class LoginRequest {
     
